@@ -211,34 +211,48 @@ body{
 
 .list-icons{
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   cursor: pointer;
 }
 
 .icon-call{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color:darkseagreen;
   height: 18px;
 }
 
 .icon-call:hover{
+  color:rgb(78, 168, 78);
   transform: scale(0.95);
 }
 
 .icon-msg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color:khaki;
   height: 18px;
 }
 
 .icon-msg:hover{
+  color:rgb(229, 214, 84);
   transform: scale(0.95);
 }
 
 .icon-del{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: indianred;
   height: 18px;
 }
 
 .icon-del:hover{
+  color: rgb(200, 44, 44);
   transform: scale(0.95);
 }
 

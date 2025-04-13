@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faPhone, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const ContactList = () => {
+
   const { phoneBook, deleteContact } = usePhoneBookStore();
+
 
   return (
     <div className="list-box">
@@ -22,8 +24,12 @@ const ContactList = () => {
                     </div>
                 </div>
                 <div className="list-icons">
-                    <FontAwesomeIcon className="icon-call" icon={faPhone}/>
-                    <FontAwesomeIcon className="icon-msg" icon={faMessage}/>
+                    <a href={`tel:${item.phoneNumber}`}>
+                        <FontAwesomeIcon className="icon-call" icon={faPhone} />
+                    </a>
+                    <a href={`sms:${item.phoneNumber}`}>
+                        <FontAwesomeIcon className="icon-msg" icon={faMessage} />
+                    </a>
                     <FontAwesomeIcon className="icon-del" icon={faTrashCan} onClick={() => deleteContact(item.id)}/>
                 </div>
             </div>
