@@ -1,7 +1,7 @@
 import React from "react";
 import usePhoneBookStore from "../stores/usePhonebookStore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMessage, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faMessage, faPhone, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const ContactList = () => {
   const { phoneBook } = usePhoneBookStore();
@@ -24,6 +24,7 @@ const ContactList = () => {
                 <div className="list-icons">
                     <FontAwesomeIcon className="icon-call" icon={faPhone}/>
                     <FontAwesomeIcon className="icon-msg" icon={faMessage}/>
+                    <FontAwesomeIcon className="icon-del" icon={faTrashCan}/>
                 </div>
             </div>
         ))}

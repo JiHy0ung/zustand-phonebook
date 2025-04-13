@@ -197,7 +197,14 @@ body{
   justify-content: center;
 }
 
+.list-name{
+  color: black;
+  font-size: 16px;
+  font-family: 'SUIT-Bold';
+}
+
 .list-num{
+  color: black;
   font-size: 13px;
   font-family: 'SUIT-Regular';
 }
@@ -225,6 +232,15 @@ body{
   transform: scale(0.95);
 }
 
+.icon-del{
+  color: indianred;
+  height: 18px;
+}
+
+.icon-del:hover{
+  transform: scale(0.95);
+}
+
 .form-info-con{
   display: flex;
   flex-direction: column;
@@ -232,9 +248,11 @@ body{
 }
 
 .form-input{
+  color: black;
   display: flex;
   justify-content: center;
   align-items: right;
+  border-radius: 0;
   border: 1px solid black; 
   padding: 10px;
   width: 40%;
@@ -246,8 +264,10 @@ body{
 }
 
 .form-input-number{
+  color: black;
   display: flex;
   border: 1px solid black; 
+  border-radius: 0;
   padding: 10px;
   width: 93%;
   font-family: 'SUIT-Bold';
@@ -341,16 +361,14 @@ body{
   }
   
   .icon-call{
-    color:darkseagreen;
     height: 15px;
   }
   
-  .icon-call:hover{
-    transform: scale(0.95);
-  }
-  
   .icon-msg{
-    color:khaki;
+    height: 15px;
+  }
+
+  .icon-del{
     height: 15px;
   }
   
