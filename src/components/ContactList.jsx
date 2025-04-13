@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faPhone, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const ContactList = () => {
-  const { phoneBook } = usePhoneBookStore();
+  const { phoneBook, deleteContact } = usePhoneBookStore();
 
   return (
     <div className="list-box">
         {phoneBook.map((item) => (
-            <div className="list">
+            <div className="list" key={item.id}>
                 <div className="list-person">
                     <img
                     className="list-img"
@@ -24,7 +24,7 @@ const ContactList = () => {
                 <div className="list-icons">
                     <FontAwesomeIcon className="icon-call" icon={faPhone}/>
                     <FontAwesomeIcon className="icon-msg" icon={faMessage}/>
-                    <FontAwesomeIcon className="icon-del" icon={faTrashCan}/>
+                    <FontAwesomeIcon className="icon-del" icon={faTrashCan} onClick={() => deleteContact(item.id)}/>
                 </div>
             </div>
         ))}
