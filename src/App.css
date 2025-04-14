@@ -132,12 +132,16 @@ body{
   border-radius: 0;
   padding: 0.5rem 1rem 0.5rem 1rem;
   outline: none;
+  box-shadow: none;
   font-size: 15px;
 }
 
 .submit-button:hover{
   background-color: black;
   color: white;
+  border: 1px solid black;
+  outline: none;
+  box-shadow: none;
 }
 
 .list-container{
@@ -185,7 +189,8 @@ body{
   width: 90%;
   padding: 10px;
   border: none;
-  outline: none ;
+  outline: none;
+  box-shadow: none;
   background-color: rgb(226, 255, 199);
 }
 
@@ -315,6 +320,7 @@ body{
   border: 1px solid black; 
   padding: 10px;
   width: 40%;
+  outline: none;
   font-family: 'SUIT-Bold';
 }
 
@@ -327,6 +333,7 @@ body{
   display: flex;
   border: 1px solid black; 
   border-radius: 0;
+  outline: none;
   padding: 10px;
   width: 93%;
   font-family: 'SUIT-Bold';
