@@ -36,6 +36,7 @@ const ContactForm = () => {
         display="flex"
       >
         <input
+          type="text"
           className="form-input"
           id="LastName"
           placeholder="성"
@@ -43,6 +44,7 @@ const ContactForm = () => {
           onChange={(e) => setLastName(e.target.value)}
         />
         <input
+          type="text"
           className="form-input"
           id="FirstName"
           placeholder="이름"
@@ -52,6 +54,7 @@ const ContactForm = () => {
       </Box>
 
       <input
+        type="number"
         className="form-input-number"
         id="PhoneNumber"
         placeholder="전화"
